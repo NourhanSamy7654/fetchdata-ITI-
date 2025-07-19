@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Store</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="header">
+      <div class="logo">
+        <a href="#" id="logo"><i class="fas fa-shopping-bag"></i> Shoping Now</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="#product">product</a></li>
+          <li><a href="/cartp.html" target="_self">Card</a></li>
+          <li><a href="">Sign In</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="home-section">
+    <div class="home-content">
+      <h1>Welcome to Simple Store</h1>
+      <p>Discover our best product and enjoy shopping!</p>
+    </div>
+  </section>
+  <section id="product">
+    <div class="SEC">
+      <h3> Our Products </h3>
+    </div>
+
+    <div class="controls">
+
+      <input type="text" id="searchInput" placeholder="Search products..." />
+      <select id="priceFilter">
+        <option value="all">All prices</option>
+        <option value="120">Less than 120 EGP</option>
+      </select>
+      <button id="clearCart">Clear Cart</button>
+    </div>
+
+    <div id="cart"><a href="/cartp.html" target="_self">🛒Cart: 0 items</a> - Total: 0 EGP </div>
+
+    <div class="container" id="productContainer">
+      <div class="product-card">
+        <img src="IMAGES/61ObwF-fhXL._AC_UF1000_1000_QL80.jpg" alt="Product 1" />
+
+        <h3>Lucky Bamboo</h3>
+        <p>Price:LE 130.00 EGP</p>
+        <button id="btn">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Simple Store. All rights reserved.(en:nourhan)</p>
+
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
